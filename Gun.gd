@@ -1,4 +1,4 @@
-extends Sprite
+extends Sprite2D
 
 var player = null
 
@@ -22,7 +22,7 @@ func _physics_process(delta):
 func fire():
 	if global_position.distance_to(player.global_position) > rang:
 		return
-	var bullet_inst = bullet.instance()
+	var bullet_inst = bullet.instantiate()
 	get_tree().get_root().add_child(bullet_inst)
 	bullet_inst.global_position = global_position
 	var dir_to_player = (player.global_position - global_position).normalized()

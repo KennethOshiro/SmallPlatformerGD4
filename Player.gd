@@ -1,9 +1,9 @@
-extends KinematicBody2D
+extends CharacterBody2D
 
-export var move_speed = 200
-export var gravity = 20
-export var less_gravity = 10
-export var jump_force = 400
+@export var move_speed = 200
+@export var gravity = 20
+@export var less_gravity = 10
+@export var jump_force = 400
 var velo = Vector2()
 var drag = 0.5
 
@@ -14,7 +14,7 @@ var last_grounded = false
 
 var facing_right = true
 
-onready var anim_player = $AnimationPlayer
+@onready var anim_player = $AnimationPlayer
 
 var dead = false
 
@@ -64,7 +64,8 @@ func _physics_process(delta):
 	if cur_grounded and velo.y > 10:
 		velo.y = 10
 	
-	move_and_slide(velo, Vector2.UP)
+	move_and_slide()
+	set_velocity(velo)#, Vector2.UP)
 	
 	if move_vec.x > 0.0 and !facing_right:
 		flip()
@@ -88,7 +89,7 @@ func jump():
 	velo.y = -jump_force
 
 func get_cur_time():
-	return OS.get_ticks_msec() / 1000.0
+	return Time.get_ticks_msec() / 1000.0
 
 func flip():
 	$Sprite.flip_h = !$Sprite.flip_h

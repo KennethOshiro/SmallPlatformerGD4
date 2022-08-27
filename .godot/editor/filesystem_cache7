@@ -1,0 +1,15 @@
+0b7126e0c6e86d3ec295a72f5aa6e0bd
+::res://::1661633504
+Bullet.gd::GDScript::-1::1661633434::0::1::::<>KinematicBody2D<>::
+Bullet.tscn::PackedScene::-1::1661633434::0::1::::<><>::res://Bullet.gd<>res://industrial.v2.png
+character.png::CompressedTexture2D::7136963200595556377::1661633434::1661633506::1::::<><>::
+default_env.tres::Environment::-1::1661633434::0::1::::<><>::
+Gun.gd::GDScript::-1::1661633434::0::1::::<>Sprite<>::
+icon.png::CompressedTexture2D::4175028663816335924::1661633434::1661633506::1::::<><>::
+industrial.v1.png::CompressedTexture2D::2430806038866633371::1661633434::1661633506::1::::<><>::
+industrial.v2.png::CompressedTexture2D::4780453649212984824::1661633434::1661633506::1::::<><>::
+Player.gd::GDScript::-1::1661633434::0::1::::<><>::
+Player.tscn::PackedScene::-1::1661633434::0::1::::<><>::res://Player.gd<>res://character.png
+README.md::TextFile::-1::1661633434::0::1::::<><>::
+Turret.tscn::PackedScene::-1::1661633434::0::1::::<><>::res://industrial.v2.png<>res://Gun.gd
+World.tscn::PackedScene::-1::1661633434::0::1::::<><>::res://Player.tscn<>res://industrial.v2.png<>res://Turret.tscn
