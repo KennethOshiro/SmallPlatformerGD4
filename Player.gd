@@ -64,8 +64,8 @@ func _physics_process(delta):
 	if cur_grounded and velo.y > 10:
 		velo.y = 10
 	
-	move_and_slide()
-	set_velocity(velo)#, Vector2.UP)
+	set_velocity(velo)
+	move_and_slide()#velo, Vector2.UP)
 	
 	if move_vec.x > 0.0 and !facing_right:
 		flip()

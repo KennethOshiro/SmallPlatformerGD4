@@ -1,6 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://cdw1sfsdiddgg"]
+[gd_scene load_steps=3 format=3 uid="uid://dumcg03ay2luy"]
 
-[ext_resource type="Texture2D" uid="uid://cadxmxnb4kt6o" path="res://industrial.v2.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://dv8ao0ayty4ao" path="res://industrial.v2.png" id="1"]
 [ext_resource type="Script" path="res://Gun.gd" id="2"]
 
 [node name="Turret" type="Node2D"]
