@@ -65,7 +65,8 @@ func _physics_process(delta):
 		velo.y = 10
 	
 	set_velocity(velo)
-	move_and_slide()#velo, Vector2.UP)
+	set_up_direction(Vector2.UP)
+	move_and_slide()
 	
 	if move_vec.x > 0.0 and !facing_right:
 		flip()
@@ -92,7 +93,7 @@ func get_cur_time():
 	return Time.get_ticks_msec() / 1000.0
 
 func flip():
-	$Sprite.flip_h = !$Sprite.flip_h
+	$Sprite2D.flip_h = !$Sprite2D.flip_h
 	facing_right = !facing_right
 
 func play_anim(anim):
