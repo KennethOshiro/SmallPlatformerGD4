@@ -7,4 +7,4 @@ I will try to keep this repo up to date as newer snapshots are released by the G
 The actual mechanics feel a bit floaty and imprecise, but that also seems to be the case with the original Godot 3 version of the game. 
 
 
-UPDATE: I have updated this demo to Alpha 16. I actually reimported the original repository, and the whole tilemap was carried over correctly. 
+UPDATE: This demo now runs on Godot 4 Beta 3. The physics of the tiles are a bit off, but new tiles will have the correct layers. 
